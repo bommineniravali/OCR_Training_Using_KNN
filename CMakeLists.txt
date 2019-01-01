@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project(train)
+find_package(OpenCV REQUIRED)
+add_executable(train generate_data.cpp)
+target_link_libraries(train ${OpenCV_LIBS})
